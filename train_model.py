@@ -130,3 +130,4 @@ print("1. Run Streamlit app: streamlit run app.py")
 print("2. Test predictions with different specifications")
 
 print("="*50)
+
