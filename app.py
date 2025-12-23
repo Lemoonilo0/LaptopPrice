@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-import plotly.graph_objects as go
 
 # Page config
 st.set_page_config(
@@ -105,4 +104,5 @@ if st.button("🔮 Prediksi Harga", type="primary", use_container_width=True):
 
 # Footer
 st.markdown("---")
+
 st.markdown("**Catatan:** Model ini dilatih menggunakan Random Forest Regressor dengan data laptop dari Kaggle")
