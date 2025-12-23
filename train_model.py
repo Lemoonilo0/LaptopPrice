@@ -15,7 +15,7 @@ print("="*50)
 # Load dataset
 print("\n[1/6] Loading dataset...")
 try:
-    df = pd.read_csv('laptop_price.csv', encoding='latin1')
+    df = pd.read_csv('laptop_price.csv', encoding='utf-8', errors='replace')
     print(f"✓ Dataset loaded: {df.shape[0]} rows, {df.shape[1]} columns")
 except FileNotFoundError:
     print("❌ Error: File 'laptop_price.csv' not found!")
@@ -130,4 +130,5 @@ print("1. Run Streamlit app: streamlit run app.py")
 print("2. Test predictions with different specifications")
 
 print("="*50)
+
 
